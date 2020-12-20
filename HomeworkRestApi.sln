@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Homework3", "Homework3\Homework3.csproj", "{7521A409-2BBC-4163-8591-148B434F50FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson", "Homework3\Lesson.csproj", "{7521A409-2BBC-4163-8591-148B434F50FE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestApi", "RestApi\RestApi.csproj", "{3B5F0B66-67D1-4C7F-8C6C-8869F1D1C295}"
 EndProject
