@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson", "Homework3\Lesson.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestApi", "RestApi\RestApi.csproj", "{3B5F0B66-67D1-4C7F-8C6C-8869F1D1C295}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebScraper", "WebScraper\WebScraper.csproj", "{1D99AC5A-DF60-4B47-AE91-24E9B79E053E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{3B5F0B66-67D1-4C7F-8C6C-8869F1D1C295}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B5F0B66-67D1-4C7F-8C6C-8869F1D1C295}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B5F0B66-67D1-4C7F-8C6C-8869F1D1C295}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D99AC5A-DF60-4B47-AE91-24E9B79E053E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D99AC5A-DF60-4B47-AE91-24E9B79E053E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D99AC5A-DF60-4B47-AE91-24E9B79E053E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D99AC5A-DF60-4B47-AE91-24E9B79E053E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

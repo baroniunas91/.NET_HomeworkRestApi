@@ -1,11 +1,10 @@
 ﻿using HtmlAgilityPack;
-using Newtonsoft.Json;
 using System;
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace Homework3
+namespace WebScraper
 {
     class Program
     {
@@ -13,30 +12,25 @@ namespace Homework3
         {
             var httpClient = new HttpClient();
 
-            var response = await httpClient.GetAsync("https://www.cvbankas.lt/?miestas=Vilnius&padalinys%5B%5D=76&keyw=");
+            var response = await httpClient.GetAsync("https://www.cvonline.lt/darbo-skelbimai/informacines-technologijos");
 
             response.EnsureSuccessStatusCode();
 
             var responseBody = await response.Content.ReadAsStringAsync();
 
-            //var responseObject = JsonConvert.DeserializeObject<Post>(responseBody);
-
             var htmlDoc = new HtmlDocument();
 
             htmlDoc.LoadHtml(responseBody);
 
-            var links = htmlDoc.DocumentNode.Descendants("h3")
-                .Where(node => node.GetAttributeValue("class", "").Contains("list_h3")).ToList();
+            var jobs = htmlDoc.DocumentNode.Descendants("div")
+                .Where(node => node.GetAttributeValue("class", "").Contains("offer_primary_info")).ToList();
 
-            var children = links.Select(l => l.InnerText);
+            var children = jobs.Select(l => l.FirstChild.FirstChild.InnerHtml);
 
             foreach (var item in children)
             {
                 Console.WriteLine(item);
             }
-
-           
-
         }
     }
 }
